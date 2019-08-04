@@ -196,6 +196,50 @@ header.header.page .logo {
     display: block;
 }
 
+.sidebar-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    width: 284px;
+    word-wrap: break-word;
+}
+
+.sidebar-menu .menu {
+    display: block;
+}
+
+.sidebar-menu .menu .item {
+    display: block;
+    font-size: 30px;
+    position: relative;
+    width: 284px;
+} 
+
+.sidebar-menu .menu .item.active {
+    font-weight: bold;
+} 
+
+.sidebar-menu .menu .submenu {
+    display: block;
+    border-left: 1px solid #000000;
+    position: relative;
+    width: 284px;
+}
+
+.sidebar-menu .menu .submenu .item {
+    font-style: italic;
+    display: block;
+    font-size: 16px;
+    padding-left: 5px;
+}
+.sidebar-menu .menu .submenu .item.active {
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 700px) {
     header.header {
         height: 210px;
