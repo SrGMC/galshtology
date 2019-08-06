@@ -3,6 +3,8 @@
 <head>
 	<title>Portfolio - Galshtology</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">var current = "digital"; var type = "drawing"</script>
+	<script type="text/javascript" src="db.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 </head>
@@ -17,15 +19,15 @@
 			<a href="#" class="item">tienda</a>
 		</div>
 	</header>
-	<div class="content template">
+	<div class="content portfolio">
 		<div class="sidebar-menu">
 			<div class="menu">
 				<span class="item"><a href="photography.html">Fotografía</a></span><br>
 				<span class="item active"><a href="drawings.html">Dibujo</a></span>
 				<span class="submenu">
-					<span class="item active" id="digital">Digital</span>
-					<span class="item" id="trad">Tradicional</span>
-					<span class="item" id="skbook">Sketchbook 2018/19</span>
+					<span class="item active" id="digital" onclick="show('digital')">Digital</span>
+					<span class="item" id="tradicional" onclick="show('tradicional')">Tradicional</span>
+					<span class="item" id="sketchbook1819" onclick="show('sketchbook1819')">Sketchbook 18/19</span>
 				</span>
 			</div>
 		</div>
@@ -33,48 +35,11 @@
 			
 		</div>
 		<div class="page">
-			<h1>Title</h1>
-			<h2>Subtitle</h2>
-			<h3>Description</h3>
-			<p>
-				Aspernatur ad officiis voluptates minima possimus aperiam dolorum. Fugiat doloribus itaque consequatur enim voluptas. Dolores et consectetur quo harum debitis quae laudantium sed. Dignissimos at doloremque magni porro. Reiciendis laborum iure fuga nam aut aut. Nam aut non ducimus autem.
-				<br><br>
-				Et quia libero qui doloribus consequuntur saepe nesciunt. Impedit non qui deserunt et. Nobis porro et eos quasi qui.
-				<br><br>
-				Recusandae consequatur quod dignissimos velit ut laboriosam. Aliquid repudiandae sint ratione quis dolores ea magnam. Beatae consequatur qui exercitationem aspernatur laboriosam corrupti ut eum. Nostrum culpa quod voluptate error. Amet nam dignissimos dolores harum iusto ut ab.
-				<br><br>
-				Excepturi ut et ut aut maiores. Distinctio blanditiis iusto inventore nulla. Nemo iste ratione quod facere sint et iure. Id molestiae perferendis in consectetur fuga rerum ut. Quis ut vel facilis inventore id dignissimos asperiores eaque.
-				<br><br>
-				Et necessitatibus quas aut totam. Laboriosam qui corporis aliquid amet ab. Qui soluta qui et assumenda excepturi aut doloremque illum. Dolore laborum temporibus eos cum placeat repudiandae commodi. Est quia quaerat architecto ab quia amet. Deleniti consequuntur dolorem ullam.
-				Aspernatur ad officiis voluptates minima possimus aperiam dolorum. Fugiat doloribus itaque consequatur enim voluptas. Dolores et consectetur quo harum debitis quae laudantium sed. Dignissimos at doloremque magni porro. Reiciendis laborum iure fuga nam aut aut. Nam aut non ducimus autem.
-				<br><br>
-				Et quia libero qui doloribus consequuntur saepe nesciunt. Impedit non qui deserunt et. Nobis porro et eos quasi qui.
-				<br><br>
-				Recusandae consequatur quod dignissimos velit ut laboriosam. Aliquid repudiandae sint ratione quis dolores ea magnam. Beatae consequatur qui exercitationem aspernatur laboriosam corrupti ut eum. Nostrum culpa quod voluptate error. Amet nam dignissimos dolores harum iusto ut ab.
-				<br><br>
-				Excepturi ut et ut aut maiores. Distinctio blanditiis iusto inventore nulla. Nemo iste ratione quod facere sint et iure. Id molestiae perferendis in consectetur fuga rerum ut. Quis ut vel facilis inventore id dignissimos asperiores eaque.
-				<br><br>
-				Et necessitatibus quas aut totam. Laboriosam qui corporis aliquid amet ab. Qui soluta qui et assumenda excepturi aut doloremque illum. Dolore laborum temporibus eos cum placeat repudiandae commodi. Est quia quaerat architecto ab quia amet. Deleniti consequuntur dolorem ullam.
-				Aspernatur ad officiis voluptates minima possimus aperiam dolorum. Fugiat doloribus itaque consequatur enim voluptas. Dolores et consectetur quo harum debitis quae laudantium sed. Dignissimos at doloremque magni porro. Reiciendis laborum iure fuga nam aut aut. Nam aut non ducimus autem.
-				<br><br>
-				Et quia libero qui doloribus consequuntur saepe nesciunt. Impedit non qui deserunt et. Nobis porro et eos quasi qui.
-				<br><br>
-				Recusandae consequatur quod dignissimos velit ut laboriosam. Aliquid repudiandae sint ratione quis dolores ea magnam. Beatae consequatur qui exercitationem aspernatur laboriosam corrupti ut eum. Nostrum culpa quod voluptate error. Amet nam dignissimos dolores harum iusto ut ab.
-				<br><br>
-				Excepturi ut et ut aut maiores. Distinctio blanditiis iusto inventore nulla. Nemo iste ratione quod facere sint et iure. Id molestiae perferendis in consectetur fuga rerum ut. Quis ut vel facilis inventore id dignissimos asperiores eaque.
-				<br><br>
-				Et necessitatibus quas aut totam. Laboriosam qui corporis aliquid amet ab. Qui soluta qui et assumenda excepturi aut doloremque illum. Dolore laborum temporibus eos cum placeat repudiandae commodi. Est quia quaerat architecto ab quia amet. Deleniti consequuntur dolorem ullam.
-				Aspernatur ad officiis voluptates minima possimus aperiam dolorum. Fugiat doloribus itaque consequatur enim voluptas. Dolores et consectetur quo harum debitis quae laudantium sed. Dignissimos at doloremque magni porro. Reiciendis laborum iure fuga nam aut aut. Nam aut non ducimus autem.
-				<br><br>
-				Et quia libero qui doloribus consequuntur saepe nesciunt. Impedit non qui deserunt et. Nobis porro et eos quasi qui.
-				<br><br>
-				Recusandae consequatur quod dignissimos velit ut laboriosam. Aliquid repudiandae sint ratione quis dolores ea magnam. Beatae consequatur qui exercitationem aspernatur laboriosam corrupti ut eum. Nostrum culpa quod voluptate error. Amet nam dignissimos dolores harum iusto ut ab.
-				<br><br>
-				Excepturi ut et ut aut maiores. Distinctio blanditiis iusto inventore nulla. Nemo iste ratione quod facere sint et iure. Id molestiae perferendis in consectetur fuga rerum ut. Quis ut vel facilis inventore id dignissimos asperiores eaque.
-				<br><br>
-				Et necessitatibus quas aut totam. Laboriosam qui corporis aliquid amet ab. Qui soluta qui et assumenda excepturi aut doloremque illum. Dolore laborum temporibus eos cum placeat repudiandae commodi. Est quia quaerat architecto ab quia amet. Deleniti consequuntur dolorem ullam.
+			<p id="image">
 			</p>
 		</div>
 	</div>
+
+	<script type="text/javascript" src="display.js"></script>
 </body>
 </html>
