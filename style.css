@@ -225,7 +225,8 @@ header.header.page .logo {
 }
 
 .content.portfolio .page #image img {
-    width: 15vw;
+    max-width: 15vw;
+    max-height: 20vw;
     margin: 20px;
 }
 
@@ -366,7 +367,8 @@ header.header.page .logo {
     }
 
     .content.portfolio .page #image img {
-        width: 35vw;
+        max-width: 35vw;
+        max-height: 50vw;
     }
 
     .content.portfolio.view .sidebar,
