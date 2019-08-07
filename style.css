@@ -194,7 +194,8 @@ header.header.page .logo {
     text-align: center;
 }
 
-.content.portfolio .page #image img {
+.content.portfolio .page #image img,
+.content.portfolio .page img {
     width: 15vw;
     padding: 20px;
 }
@@ -312,7 +313,8 @@ header.header.page .logo {
         text-align: center;
     }
 
-    .content.portfolio .page #image img {
+    .content.portfolio .page #image img,
+    .content.portfolio .page img {
         width: 35vw;
     }
 

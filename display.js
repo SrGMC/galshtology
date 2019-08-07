@@ -12,5 +12,33 @@ function show(category) {
 	document.getElementById(current).classList.add('active');
 }
 
+function image() {
+    var url = new URL(window.location.href);
+    var img = url.searchParams.get("img");
+    document.getElementById("view-image").src = "files/portfolio/IMG_" + img + ".png";
+}
+
+function nextImg() {
+    var url = new URL(window.location.href);
+    var img = url.searchParams.get("img");
+    if(img+1 <= db[ranges][1]){
+        window.history.pushState("","","/view.html?img=" + (img+1));
+        image();
+    }
+}
+
+function prevImg() {
+    var url = new URL(window.location.href);
+    var img = url.searchParams.get("img");
+    if(img-1 >= db[ranges][0]){
+        window.history.pushState("","","/view.html?img=" + (img-1));
+        image();
+    }
+}
+
 console.log("Type: " + type + ", category: " + current);
-show(current);
+if (!window.location.pathname.includes("view.html")) {
+    show(current);	
+} else {
+    image();
+}
