@@ -3,7 +3,7 @@ function show(category) {
 	var content = "";
 	if(range !== null){
 		for (var i = range[0]; i <= range[1]; i++) {
-			content += '<img src="https://github.com/SrGMC/galshtology/raw/master/files/portfolio/IMG_' + i + '.png">'
+			content += '<img src="files/portfolio/IMG_' + i + '.png">'
 		}
 	}
 	document.getElementById('image').innerHTML = content;
