@@ -3,7 +3,6 @@
 <head>
 	<title>Image - Galshtology</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript">var current = "bw"; var type = "photography"</script>
 	<script type="text/javascript" src="db.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
@@ -19,19 +18,12 @@
 			<a href="#" class="item">tienda</a>
 		</div>
 	</header>
-	<div class="content portfolio">
-		<div class="sidebar-menu">
-			<div class="menu">
-				<span class="item"><a href="photography.html">Fotografía</a></span><br>
-				<span class="item"><a href="drawings.html">Dibujo</a></span>
-			</div>
-		</div>
-		<div class="sidebar">
-			
-		</div>
+	<div class="content portfolio view">
 		<div class="page">
 			<img id="view-image">
 		</div>
+		<div class="nav prev" onclick="prevImg();">Prev</div>
+		<div class="nav next" onclick="nextImg();">Next</div>
 	</div>
 
 	<script type="text/javascript" src="display.js"></script>

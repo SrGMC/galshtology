@@ -187,17 +187,58 @@ header.header.page .logo {
     display: inline-block;
     padding: 20px 40px;
     position: absolute;
-    padding-right: 60px; 
+    padding-right: 60px;
 }
 
 .content.portfolio .page {
     text-align: center;
 }
 
-.content.portfolio .page #image img,
-.content.portfolio .page img {
+.content.portfolio.view .page {
+    right: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.content.portfolio.view .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 85%;
+    padding: 5px;
+    margin: 20px;
+}
+
+.content.portfolio.view .nav:hover {
+    background: rgba(0,0,0,0.3); 
+}
+
+.content.portfolio.view .prev {
+    float: left;
+}
+
+.content.portfolio.view .next {
+    float: right;
+}
+
+.content.portfolio .page #image img {
     width: 15vw;
+    margin: 20px;
+}
+
+.content.portfolio.view .page img {
+    max-width: 90%;
+    max-height: 90%;
     padding: 20px;
+    position: relative;
+    transition: all 1s ease-in-out 0s;
+}
+
+.lazyload {
+    background: rgba(0,0,0,0.2);
 }
 
 .tabbed {
@@ -249,6 +290,8 @@ header.header.page .logo {
 .sidebar-menu .menu .submenu .item.active {
     font-weight: bold;
 }
+
+
 
 @media only screen and (max-width: 700px) {
     header.header {
@@ -313,9 +356,22 @@ header.header.page .logo {
         text-align: center;
     }
 
-    .content.portfolio .page #image img,
-    .content.portfolio .page img {
+    .content.portfolio.view .page {
+        padding: 0;
+    }
+
+    .content.portfolio.view .page img {
+        max-width: 70%;
+        max-height: 70%;
+    }
+
+    .content.portfolio .page #image img {
         width: 35vw;
+    }
+
+    .content.portfolio.view .sidebar,
+    .content.portfolio.view .sidebar-menu {
+        display: none
     }
 
     .sidebar-menu {
