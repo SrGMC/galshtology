@@ -1,5 +1,5 @@
 var db = {
-  "ranges" = [1,53],
+  "ranges": [1,53],
   "drawing": {
     "sketchbook1819": [1,39],
     "tradicional": [40,47],
