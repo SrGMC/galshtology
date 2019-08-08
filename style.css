@@ -212,8 +212,12 @@ header.header.page .logo {
     margin: 20px;
 }
 
-.content.portfolio.view .nav:hover {
-    background: rgba(0,0,0,0.3); 
+.content.portfolio.view .nav img {
+	width: 48px;
+}
+
+.content.portfolio.view .nav img:hover {
+    filter: invert(1);
 }
 
 .content.portfolio.view .prev {
@@ -375,6 +379,10 @@ header.header.page .logo {
     .content.portfolio.view .sidebar-menu {
         display: none
     }
+	
+	.content.portfolio.view .nav {
+		height: 50%;
+	}
 
     .sidebar-menu {
         width: 128px;
