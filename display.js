@@ -23,7 +23,7 @@ function nextImg() {
     var url = new URL(window.location.href);
     var img = parseInt(url.searchParams.get("img"));
     if(img+1 <= db.ranges[1]){
-        window.history.pushState("","","view.html?img=" + (img+1));
+        window.history.replaceState("","Galshtology","view.html?img=" + (img+1));
         image();
     }
 }
@@ -32,7 +32,7 @@ function prevImg() {
     var url = new URL(window.location.href);
     var img = parseInt(url.searchParams.get("img"));
     if(img-1 >= db.ranges[0]){
-        window.history.pushState("","","view.html?img=" + (img-1));
+        window.history.replaceState("","Galshtology","view.html?img=" + (img-1));
         image();
     }
 }
