@@ -17,7 +17,20 @@ function image() {
     var url = new URL(window.location.href);
     var img = parseInt(url.searchParams.get("img"));
     var cat = url.searchParams.get("cat");
+    var type = url.searchParams.get("type");
     document.getElementById("view-image").src = "files/portfolio/" + cat + "/" + cat + "_" + img + ".png";
+
+    if(img+1 <= db[type][cat]){
+    	document.getElementById("nav_next").classList.remove('hidden');
+    } else {
+    	document.getElementById("nav_next").classList.add('hidden');
+    }
+
+    if(img-1 >= 1){
+    	document.getElementById("nav_prev").classList.remove('hidden');
+    } else {
+    	document.getElementById("nav_prev").classList.add('hidden');
+    }
 }
 
 function nextImg() {
