@@ -1,13 +1,12 @@
 var db = {
-  "ranges": [1,53],
   "drawing": {
-    "sketchbook1819": [1,39],
-    "tradicional": [40,47],
-    "digital": [48,53]
+    "sketchbook1819": 39,
+    "tradicional": 8,
+    "digital": 7
   },
   "photography": {
-  	"bw": null,
-  	"color": null,
-  	"rem": null
+  	"bw": 8,
+  	"color": 23,
+  	"rem": 7
   }
 }
