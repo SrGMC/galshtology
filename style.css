@@ -216,6 +216,10 @@ header.header.page .logo {
 	width: 48px;
 }
 
+.content.portfolio.view .nav.hidden {
+    display: none;
+}
+
 .content.portfolio.view .nav img:hover {
     filter: invert(1);
 }
