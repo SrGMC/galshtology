@@ -21,7 +21,7 @@ function image() {
     var type = url.searchParams.get("type");
     document.getElementById("view-image").src = "files/portfolio/" + cat + "/" + cat + "_" + img + ".png";
 
-    if(img+1 <= db[type][cat]){
+    if(img+1 <= db[type][cat].count){
     	document.getElementById("nav_next").classList.remove('hidden');
     } else {
     	document.getElementById("nav_next").classList.add('hidden');
@@ -39,7 +39,7 @@ function nextImg() {
     var img = parseInt(url.searchParams.get("img"));
     var cat = url.searchParams.get("cat");
     var type = url.searchParams.get("type");
-    if(img+1 <= db[type][cat]){
+    if(img+1 <= db[type][cat].count){
         window.history.replaceState("","Galshtology","view.html?img=" + (img+1) + '&type=' + type + '&cat=' + cat);
         image();
     }
