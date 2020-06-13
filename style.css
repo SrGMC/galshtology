@@ -35,11 +35,11 @@ body {
 
 a {
     color: #000;
-    text-decoration: none;
+    /*text-decoration: none;*/
 }
 
 a:hover {
-    color: #FF4136;
+    color: #44D62C;
 }
 
 h1, h2, h3 {
@@ -74,13 +74,17 @@ header.header {
     background-color: #fff; 
 }
 
+header.header a {
+    text-decoration: none;
+}
+
 header.header .logo {
     padding: 10px;
-    padding-top: 15px; 
+    padding-top: 15px;
 }
 
 header.header .logo img {
-    height: 64px;
+    height: 128px;
 }
 
 header.header .menu .item {
@@ -181,6 +185,7 @@ header.header.page .logo {
 
 .content .sidebar img {
     width: 284px;
+    margin-top: 50px;
 }
 
 .content .page {
@@ -193,6 +198,12 @@ header.header.page .logo {
 .content.portfolio .page {
     text-align: center;
 }
+
+.content.portfolio .page .subtitle {
+    text-align: justify;
+    margin: 0 15px;
+}
+
 
 .content.portfolio.view .page {
     right: 0;
@@ -279,6 +290,10 @@ header.header.page .logo {
     word-wrap: break-word;
 }
 
+.sidebar-menu a {
+    text-decoration: none;
+}
+
 .sidebar-menu .menu {
     display: block;
 }
@@ -315,7 +330,7 @@ header.header.page .logo {
 
 @media only screen and (max-width: 700px) {
     header.header {
-        height: 210px;
+        height: 250px;
     }
 
     header.header .menu .item {
@@ -342,14 +357,14 @@ header.header.page .logo {
     .content {
         display: initial;
         position: absolute;
-        top: 210px;
+        top: 250px;
         left: 0;
         right: 0;
     }
     .content.home {
         display: initial;
         position: absolute;
-        top: 210px;
+        top: 250px;
         left: 0;
         right: 0;
         z-index: 1;
