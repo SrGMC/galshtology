@@ -1,5 +1,6 @@
 function show(category) {
-	var range = db[type][category];
+	var range = db[type][category].count;
+	document.querySelector('#subtitle').innerHTML = db[type][category].subtitle;
 	var content = "";
 	if(range !== null){
 		for (var i = 1; i <= range; i++) {

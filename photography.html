@@ -4,7 +4,13 @@
 	<title>Portfolio - Galshtology</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
-	<script type="text/javascript">var current = "bw"; var type = "photography"</script>
+	<script type="text/javascript">
+        var url = new URL(window.location.href);
+        var current = url.searchParams.get("current");
+        var type = url.searchParams.get("type");
+        current = current == null ? "bw" : current;
+        type = type == null ? "photography" : current;
+    </script>
 	<script type="text/javascript" src="db.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
@@ -17,25 +23,27 @@
 		<div class="menu">
 			<a href="about.html" class="item">sobre mi</a>
 			<a href="photography.html" class="item active">portfolio</a>
-			<a href="store.html" class="item">tienda</a>
 		</div>
 	</header>
 	<div class="content portfolio">
 		<div class="sidebar-menu">
 			<div class="menu">
+				<span class="item active"><a href="photography.html">Fotografía</a></span>
 				<span class="submenu">
-					<a class="item active" id="bw" onclick="show('bw')">Blanco y negro</a>
+					<a class="item" id="bw" onclick="show('bw')">Blanco y negro</a>
 					<a class="item" id="color" onclick="show('color')">Color</a>
 					<a class="item" id="rem" onclick="show('rem')">REM</a>
-				</span>
-				<span class="item active"><a href="photography.html">Fotografía</a></span><br>
-				<span class="item"><a href="drawings.html">Dibujo</a></span>
+					<a class="item" id="ide" onclick="show('ide')">La intimidad del ente</a>
+				</span><br>
+				<span class="item"><a href="drawings.html">Dibujo</a></span><br>
+				<span class="item"><a href="design.html">Diseño</a></span>
 			</div>
 		</div>
 		<div class="sidebar">
 			
 		</div>
 		<div class="page">
+		    <p class="subtitle" id="subtitle"></p>
 			<p id="image">
 			</p>
 		</div>

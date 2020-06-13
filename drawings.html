@@ -4,7 +4,13 @@
 	<title>Portfolio - Galshtology</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
-	<script type="text/javascript">var current = "digital"; var type = "drawing"</script>
+	<script type="text/javascript">
+        var url = new URL(window.location.href);
+        var current = url.searchParams.get("current");
+        var type = url.searchParams.get("type");
+        current = current == null ? "digital" : current;
+        type = type == null ? "drawing" : current;
+    </script>
 	<script type="text/javascript" src="db.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
@@ -17,7 +23,6 @@
 		<div class="menu">
 			<a href="about.html" class="item">sobre mi</a>
 			<a href="photography.html" class="item active">portfolio</a>
-			<a href="store.html" class="item">tienda</a>
 		</div>
 	</header>
 	<div class="content portfolio">
@@ -26,16 +31,18 @@
 				<span class="item"><a href="photography.html">Fotografía</a></span><br>
 				<span class="item active"><a href="drawings.html">Dibujo</a></span>
 				<span class="submenu">
-					<a class="item active" id="digital" onclick="show('digital')">Digital</a>
+					<a class="item" id="digital" onclick="show('digital')">Digital</a>
 					<a class="item" id="tradicional" onclick="show('tradicional')">Tradicional</a>
 					<a class="item" id="sketchbook1819" onclick="show('sketchbook1819')">Sketchbook 18/19</a>
-				</span>
+				</span><br>
+				<span class="item"><a href="design.html">Diseño</a></span>
 			</div>
 		</div>
 		<div class="sidebar">
 			
 		</div>
 		<div class="page">
+			<p class="subtitle" id="subtitle"></p>
 			<p id="image">
 			</p>
 		</div>
