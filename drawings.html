@@ -1,53 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Portfolio - Galshtology</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
-	<script type="text/javascript">
-        var url = new URL(window.location.href);
-        var current = url.searchParams.get("current");
-        var type = url.searchParams.get("type");
-        current = current == null ? "digital" : current;
-        type = type == null ? "drawing" : current;
-    </script>
-	<script type="text/javascript" src="db.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="UTF-8">
-</head>
-<body>
-	<header class="header page">
-		<div class="logo">
-			<a href="index.html"><img src="files/logo.png" alt="Galshtology"></a>
-		</div>
-		<div class="menu">
-			<a href="about.html" class="item">sobre mi</a>
-			<a href="photography.html" class="item active">portfolio</a>
-		</div>
-	</header>
-	<div class="content portfolio">
-		<div class="sidebar-menu">
-			<div class="menu">
-				<span class="item"><a href="photography.html">Fotografía</a></span><br>
-				<span class="item active"><a href="drawings.html">Dibujo</a></span>
-				<span class="submenu">
-					<a class="item" id="digital" onclick="show('digital')">Digital</a>
-					<a class="item" id="tradicional" onclick="show('tradicional')">Tradicional</a>
-					<a class="item" id="sketchbook1819" onclick="show('sketchbook1819')">Sketchbook 18/19</a>
-				</span><br>
-				<span class="item"><a href="design.html">Diseño</a></span>
-			</div>
-		</div>
-		<div class="sidebar">
-			
-		</div>
-		<div class="page">
-			<p class="subtitle" id="subtitle"></p>
-			<p id="image">
-			</p>
-		</div>
-	</div>
+    <head>
+        <title>Portfolio - Galshtology</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+        <script type="text/javascript">
+            var url = new URL(window.location.href);
+            var current = url.searchParams.get("current");
+            var type = url.searchParams.get("type");
+            current = current == null ? "digital" : current;
+            type = type == null ? "drawing" : current;
+        </script>
+        <script type="text/javascript" src="db.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <header class="header page">
+            <div class="logo">
+                <a href="index.html"><img src="files/logo.png" alt="Galshtology" /></a>
+            </div>
+            <div class="menu">
+                <a href="about.html" class="item">sobre mi</a>
+                <a href="photography.html" class="item active">portfolio</a>
+            </div>
+        </header>
+        <div class="content portfolio">
+            <div class="sidebar-menu">
+                <div class="menu">
+                    <span class="item"><a href="photography.html">Fotografía</a></span
+                    ><br />
+                    <span class="item active"><a href="drawings.html">Dibujo</a></span>
+                    <span class="submenu">
+                        <a class="item" id="digital" onclick="show('digital')">Digital</a>
+                        <a class="item" id="tradicional" onclick="show('tradicional')">Tradicional</a>
+                        <a class="item" id="sketchbook1819" onclick="show('sketchbook1819')">Sketchbook 18/19</a> </span
+                    ><br />
+                    <span class="item"><a href="design.html">Diseño</a></span>
+                </div>
+            </div>
+            <div class="sidebar"></div>
+            <div class="page">
+                <p class="subtitle" id="subtitle"></p>
+                <p id="image"></p>
+            </div>
+        </div>
 
-	<script type="text/javascript" src="display.js"></script>
-</body>
+        <script type="text/javascript" src="display.js"></script>
+        <script async defer data-website-id="f849d609-7ab2-4bb8-92f9-67402b142c74" src="https://u.fcld.ml/umami.js"></script>
+    </body>
 </html>

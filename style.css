@@ -1,26 +1,26 @@
 @font-face {
     font-family: "Quicksand";
-    src: url('files/fonts/Quicksand-Regular.ttf');
+    src: url("files/fonts/Quicksand-Regular.ttf");
 }
 @font-face {
     font-family: "Quicksand";
-    src: url('files/fonts/Quicksand-Light.ttf');
+    src: url("files/fonts/Quicksand-Light.ttf");
     font-weight: 300;
 }
 @font-face {
     font-family: "Quicksand";
-    src: url('files/fonts/Quicksand-SemiBold.ttf');
+    src: url("files/fonts/Quicksand-SemiBold.ttf");
     font-weight: 700;
     font-style: bold;
 }
 
 @font-face {
     font-family: "Unna";
-    src: url('files/fonts/Unna-Regular.ttf');
+    src: url("files/fonts/Unna-Regular.ttf");
 }
 @font-face {
     font-family: "Unna";
-    src: url('files/fonts/Unna-Bold.ttf');
+    src: url("files/fonts/Unna-Bold.ttf");
     font-weight: 700;
     font-style: bold;
 }
@@ -39,13 +39,15 @@ a {
 }
 
 a:hover {
-    color: #44D62C;
+    color: #44d62c;
 }
 
-h1, h2, h3 {
-   font-family: "Unna", serif; 
-   margin: 0;
-   font-weight: normal;
+h1,
+h2,
+h3 {
+    font-family: "Unna", serif;
+    margin: 0;
+    font-weight: normal;
 }
 
 h1 {
@@ -71,7 +73,7 @@ header.header {
     text-align: center;
     font-family: "Unna", serif;
     z-index: 2;
-    background-color: #fff; 
+    background-color: #fff;
 }
 
 header.header a {
@@ -92,7 +94,7 @@ header.header .menu .item {
     font-size: 20px;
     display: inline-block;
     padding: 0 50px;
-    margin: 10px 0; 
+    margin: 10px 0;
 }
 
 header.header .menu .item {
@@ -105,7 +107,7 @@ header.header .menu .item:before,
 header.header .menu .item:after {
     border: 0 solid transparent;
     transition: all 0.25s;
-    content: '';
+    content: "";
     height: 24px;
     position: absolute;
     width: 0px;
@@ -204,7 +206,6 @@ header.header.page .logo {
     margin: 0 15px;
 }
 
-
 .content.portfolio.view .page {
     right: 0;
     position: absolute;
@@ -224,7 +225,7 @@ header.header.page .logo {
 }
 
 .content.portfolio.view .nav img {
-	width: 48px;
+    width: 48px;
 }
 
 .content.portfolio.view .nav.hidden {
@@ -269,7 +270,7 @@ header.header.page .logo {
 }
 
 .lazyload {
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .tabbed {
@@ -303,11 +304,11 @@ header.header.page .logo {
     font-size: 30px;
     position: relative;
     width: 284px;
-} 
+}
 
 .sidebar-menu .menu .item.active {
     font-weight: bold;
-} 
+}
 
 .sidebar-menu .menu .submenu {
     display: block;
@@ -327,7 +328,6 @@ header.header.page .logo {
     font-weight: bold;
 }
 
-
 @media only screen and (max-width: 700px) {
     header.header {
         height: 250px;
@@ -344,7 +344,7 @@ header.header.page .logo {
 
     header.header.page .menu {
         display: block;
-        padding-top: 5px; 
+        padding-top: 5px;
         padding-left: 0;
     }
 
@@ -407,12 +407,12 @@ header.header.page .logo {
 
     .content.portfolio.view .sidebar,
     .content.portfolio.view .sidebar-menu {
-        display: none
+        display: none;
     }
-	
-	.content.portfolio.view .nav {
-		height: 50%;
-	}
+
+    .content.portfolio.view .nav {
+        height: 50%;
+    }
 
     .sidebar-menu {
         width: 128px;
